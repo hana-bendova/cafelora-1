@@ -8,6 +8,7 @@ import '../components/Menu/menu.css';
 import '../components/Gallery/gallery.css';
 import '../components/Contact/contact.css';
 import '../components/Header/header.css';
+import '../components/Layer/layer.css';
 
 import { Header } from '../components/Header/header.jsx';
 import { Banner } from '../components/Banner/banner.jsx';
