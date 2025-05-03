@@ -17,12 +17,17 @@ import { Gallery } from '../components/Gallery/gallery.jsx';
 import { Contact } from '../components/Contact/contact.jsx';
 import { Footer } from '../components/Footer/footer.jsx';
 
+const response = await fetch('http://localhost:4000/api/drinks');
+const body = await response.json();
+console.log(body);
+const drinks = body.data;
+
 document.querySelector('#root').innerHTML = render(
   <div className="page">
     <Header />
     <main>
       <Banner />
-      <Menu />
+      <Menu drinks={drinks} />
       <Gallery />
       <Contact />
     </main>
